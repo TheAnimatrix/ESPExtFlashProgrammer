@@ -70,8 +70,8 @@ def readID(timeout):
 force = False
 file = ""
 in_port = ""
-offset = 0x0;
-baud_rate = 9600;
+offset = 0x0
+baud_rate = 9600
 
 for argv in sys.argv:
     if argv == '-f':
