@@ -71,6 +71,7 @@ force = False
 file = ""
 in_port = ""
 offset = 0x0;
+baud_rate = 9600;
 
 for argv in sys.argv:
     if argv == '-f':
@@ -87,6 +88,16 @@ for argv in sys.argv:
         if(len(in_port)<=0):
             print("Invalid Port, please specify as follows : --port=<port_name>")
             exit()
+    if "--baud-rate=" in argv:
+        baud_rate = argv.split("=")[1]
+        if(len(baud_rate)<=0):
+            print("Invalid Baud Rate, please specify proper Baud Rate as follows : --baud-rate=<baud_rate_of_your_choice>") 
+            exit()
+        try:
+            baud_rate = int(baud_rate,10)
+        except:
+            print("Invalid Baud Rate format! please specify proper Baud Rate as follows : --baud-rate=<integer_baud_rate>") 
+            exit()
     if "--offset=" in argv:
         offset = argv.split("=")[1]
         if(len(offset)<=0):
@@ -95,7 +106,8 @@ for argv in sys.argv:
         try:
             offset = int(offset,16)
         except:
-            print("Invali Offset Format! Please specify in HEX as follows : --offset=<0x300000>")
+            print("Invalid Offset Format! Please specify in HEX as follows : --offset=<0x300000>")
+            exit()
 
 if (len(file) == 0 ):
     print("Please specify file to flash using --file=<file_path>")
@@ -124,7 +136,6 @@ while try_again:
         g_port = result
         print(f"Port {g_port} selected")
 
-baud_rate = 9600
 ser = Serial(g_port,baud_rate,timeout=5)
 rfile = open(file,'r+b')
 checkAvailability()
