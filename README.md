@@ -13,7 +13,7 @@ NodeMCU V2.0 (ESP 12-E)
 Depenencies:
 ------------
 1. Arduino Framework
-2. Arduino/ Arduino Framework Compatible MCU
+2. Arduino/ Arduino Framework Compatible MCU (3.3V!!)
 3. [SPIMemory library](https://github.com/Marzogh/SPIMemory) for Arduino ([https://github.com/Marzogh/SPIMemory](https://github.com/Marzogh/SPIMemory))
 4. Python3
 
@@ -52,7 +52,10 @@ CAVEATS
    Use this at your own discretion.
 2. Erases the entire chip before writing specified contents 
    (feel free to fork and tweak this)
-
+   
+PRECAUTION!!
+------------
+Check your Microcontroller's potential before hooking it up to an external flash, make sure their voltages line up!
 
 LICENSE
 -------
