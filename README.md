@@ -17,8 +17,7 @@ Depenencies:
 Steps:
 -------
 1. Replace `SS` in line 3 of main.cpp `#DEFINE SSP SS` with Chip Select pin of your choice 
-1. Flash `main.cpp` to your microcontroller of choice.
-2. Change line 4 in main.cpp
+2. Flash `main.cpp` to your microcontroller of choice.
 3. Keep your microcontroller connected to your PC
 4. Run `write_flash.py` with python3
    ex:
