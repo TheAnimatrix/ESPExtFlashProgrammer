@@ -3,7 +3,8 @@
 # ESPExtFlashProgrammer
 
 Use your PC coupled with an arduino compatible microcontroller to program an external spi flash module!
-File transfer from PC to MCU takes place over a Serial connection.
+
+*File transfer from PC to MCU takes place over a Serial connection.*
 
 Tested with the following devices
 ---------------------------------
