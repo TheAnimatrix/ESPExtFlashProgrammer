@@ -1,5 +1,6 @@
 
-#ESPExtFlashProgrammer
+
+# ESPExtFlashProgrammer
 
 Use your PC coupled with an arduino compatible microcontroller to program an external flash module over SPI!
 
@@ -10,7 +11,7 @@ NodeMCU V2.0 (ESP 12-E)
 Depenencies:
 ------------
 1. Arduino Framework
-2. SPIMemory library for Arduino (https://github.com/Marzogh/SPIMemory)
+2. [SPIMemory library](https://github.com/Marzogh/SPIMemory) for Arduino ([https://github.com/Marzogh/SPIMemory](https://github.com/Marzogh/SPIMemory))
 3. Python3
 
 Steps:
@@ -19,25 +20,29 @@ Steps:
 2. Keep your microcontroller connected to your PC
 3. Run `write_flash.py` with python3
    ex:
-    python3 write_flash.py
-    python write_flash.py
+>         python3 write_flash.py
+>         python write_flash.py
 
 Script Arguements
 -------------------
 
---file=<file_name> (Required)
+> **--file=<file_name> (Required)**
+
         Specify the path of the file you want to flash to your external flash module
 
---port=<port_name> (Optional)
+> **--port=<port_name> (Optional)**
+
         Specifying this can remove the step where the script asks you to choose your port from a list
 
---offset=<offset_in_hex> (Optional, defaults to 0x0)
+> **--offset=<offset_in_hex> (Optional, defaults to 0x0)**
+
         Specify the address where you want your file to be flashed    
 
--f (force) (Optional)
+> **-f (force) (Optional)**
+
         Skip some confirmation messages
 
-CAVEAT
+CAVEATS
 ------
 1. This is constantly evolving.
    Use this at your own discretion.
