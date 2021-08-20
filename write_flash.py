@@ -133,7 +133,7 @@ print("jedec id    : " +hex(int(readID(5),16)>>16))
 print("memory type : " +hex(int(readID(5),16)>>8 & 0xFF))
 print("capacity    : " +hex(int(readID(5),16) & 0xFF))
 if(not force):
-    w = input("\nProceed(y/n) ?")
+    w = input("\nProceed? Your flash module will be erased!! (y/n)")
     if(not(w == 'y' or w == 'Y')):
         print("exiting...")
         exit()
