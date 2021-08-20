@@ -1,7 +1,8 @@
 #include <Arduino.h>
 #include <SPIMemory.h>
+#DEFINE SSP SS
 
-SPIFlash flash(D1); //setup spi flash w/ cs set to D1(GPIO5)
+SPIFlash flash(SSP); //setup spi flash w/ cs set to D1(GPIO5)
 void setup()
 {
   flash.begin(); //init
