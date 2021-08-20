@@ -36,7 +36,7 @@ Script Arguements
 
 > **--port=<port_name> (Optional)**
 
-        Specifying this can remove the step where the script asks you to choose your port from a list
+        Specifying this can remove the step where the script asks you to choose the serial port of your MCU from a list
 
 > **--offset=<offset_in_hex> (Optional, defaults to 0x0)**
 
