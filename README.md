@@ -13,8 +13,9 @@ NodeMCU V2.0 (ESP 12-E)
 Depenencies:
 ------------
 1. Arduino Framework
-2. [SPIMemory library](https://github.com/Marzogh/SPIMemory) for Arduino ([https://github.com/Marzogh/SPIMemory](https://github.com/Marzogh/SPIMemory))
-3. Python3
+2. Arduino/ Arduino Framework Compatible MCU
+3. [SPIMemory library](https://github.com/Marzogh/SPIMemory) for Arduino ([https://github.com/Marzogh/SPIMemory](https://github.com/Marzogh/SPIMemory))
+4. Python3
 
 Steps:
 -------
