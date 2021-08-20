@@ -1,6 +1,6 @@
 
 
-# ESPExtFlashProgrammer
+# ExtFlashProgrammer
 
 Use your PC coupled with an arduino compatible microcontroller to program an external spi flash module!
 
