@@ -40,11 +40,7 @@ Script Arguements
 
 > **--offset=<offset_in_hex> (Optional, defaults to 0x0)**
 
-        Specify the address where you want your file to be flashed  
-        
-> **--baud-rate=<baud_rate_integer> (Optional, defaults to 9600)**
-
-        Specify the address where you want your file to be flashed    
+        Specify the address where you want your file to be flashed   
         
 > **-f (force) (Optional)**
 
